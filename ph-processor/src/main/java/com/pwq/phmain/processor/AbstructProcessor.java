@@ -306,7 +306,7 @@ public abstract class AbstructProcessor {
      *
      * @return
      */
-    private WebClient initWebClient(WebClient webClient) {
+    protected WebClient initWebClient(WebClient webClient) {
         if (null == webClient) {
             webClient = new WebClient(BrowserVersion.FIREFOX_45);
             webClient.getCookieManager().clearCookies();
